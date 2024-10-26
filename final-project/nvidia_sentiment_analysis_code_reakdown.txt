@@ -1,0 +1,36 @@
+Penjelasan Kode:
+Impor Pustaka:
+pandas untuk manipulasi data, transformers untuk model analisis sentimen, dan sklearn.metrics untuk mengevaluasi kinerja model.
+
+Muat Dataset:
+Memuat dataset ulasan Amazon yang didownload melalui kaggle.
+
+Pilih Kolom yang Relevan:
+Memfilter DataFrame untuk hanya menyimpan kolom yang berisi teks ulasan dan penilaian keseluruhan.
+
+Tentukan Label Sentimen:
+Fungsi label_sentiment didefinisikan untuk mengklasifikasikan penilaian menjadi kategori sentimen (positif, netral, negatif) berdasarkan penilaian keseluruhan.
+
+Terapkan Label Sentimen:
+Membuat kolom baru dalam DataFrame untuk menyimpan label sentimen berdasarkan penilaian.
+
+Muat Pipeline Analisis Sentimen:
+Memuat model analisis sentimen dari pustaka Hugging Face Transformers.
+
+Siapkan Ulasan untuk Analisis:
+Mengonversi teks ulasan menjadi daftar untuk mempersiapkannya untuk pipeline analisis sentimen.
+
+Analisis Sentimen:
+Menjalankan analisis sentimen pada teks ulasan, menyimpan hasilnya dalam DataFrame baru.
+
+Ekstrak Prediksi:
+Mengekstrak label sentimen yang diprediksi dan skor yang sesuai.
+
+Pemetaan Sentimen yang Diprediksi:
+Membuat pemetaan label sentimen yang diprediksi dari output model ke kategori sentimen yang telah Anda definisikan.
+
+Evaluasi Model:
+Mencetak laporan klasifikasi untuk mengevaluasi kinerja model berdasarkan sentimen aktual dan yang diprediksi.
+
+Tampilkan Hasil:
+Mencetak beberapa hasil pertama untuk memeriksa output.
